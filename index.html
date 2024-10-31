@@ -46,7 +46,7 @@
             text-align: center;
             margin-bottom: 15px;
         }
-        .stat, .club-stat, .comp {
+        .stat, .club-stat {
             display: flex;
             justify-content: space-between;
             padding: 5px 0;
@@ -64,6 +64,13 @@
         .about {
             text-align: justify;
             line-height: 1.6;
+        }
+        .comparison-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .player {
+            width: 48%;
         }
     </style>
 </head>
@@ -121,47 +128,82 @@
 
     <div class="comparison">
         <h2>Comparativa: Messi vs Maradona</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Datos</th>
-                    <th>Messi</th>
-                    <th>Maradona</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Goles Totales</td>
-                    <td>800</td>
-                    <td>345</td>
-                </tr>
-                <tr>
-                    <td>Asistencias Totales</td>
-                    <td>330</td>
-                    <td>115</td>
-                </tr>
-                <tr>
-                    <td>Goles de Tiro Libre</td>
-                    <td>60</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <td>Trofeos Ganados</td>
-                    <td>40</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>Partidos Jugados</td>
-                    <td>1000</td>
-                    <td>491</td>
-                </tr>
-                <tr>
-                    <td>Minutos Jugados</td>
-                    <td>90000</td>
-                    <td>20000</td> <!-- Cambia este número según las estadísticas actuales -->
-                </tr>
-            </tbody>
-        </table>
+        <div class="comparison-container">
+            <div class="player">
+                <h3>Messi</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Datos</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Goles Totales</td>
+                            <td>800</td>
+                        </tr>
+                        <tr>
+                            <td>Asistencias Totales</td>
+                            <td>330</td>
+                        </tr>
+                        <tr>
+                            <td>Goles de Tiro Libre</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Trofeos Ganados</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>Partidos Jugados</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>Minutos Jugados</td>
+                            <td>90000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="player">
+                <h3>Maradona</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Datos</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Goles Totales</td>
+                            <td>345</td>
+                        </tr>
+                        <tr>
+                            <td>Asistencias Totales</td>
+                            <td>115</td>
+                        </tr>
+                        <tr>
+                            <td>Goles de Tiro Libre</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Trofeos Ganados</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>Partidos Jugados</td>
+                            <td>491</td>
+                        </tr>
+                        <tr>
+                            <td>Minutos Jugados</td>
+                            <td>20000</td> <!-- Cambia este número según las estadísticas actuales -->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
     <div>
