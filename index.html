@@ -77,11 +77,18 @@
 <body>
     <h1>Messi es más grande que Maradona (para Emiliano)</h1>
     <img src="MESSI.jpg" alt="Messi levantando la copa con la camiseta de Argentina">
-    
-    <audio controls autoplay>
+
+    <audio id="music" controls>
         <source src="musica.mp3" type="audio/mpeg">
         Tu navegador no soporta el elemento de audio.
     </audio>
+
+    <script>
+        document.body.addEventListener('click', function() {
+            var music = document.getElementById('music');
+            music.play();
+        });
+    </script>
 
     <div class="stats">
         <h2>Logros y Récords de Messi</h2>
@@ -95,7 +102,7 @@
         </div>
         <div class="stat">
             <span>Goles de Tiro Libre:</span>
-            <span>60</span> <!-- Cambia este número según las estadísticas actuales -->
+            <span>60</span>
         </div>
         <div class="stat">
             <span>Asistencias Totales:</span>
@@ -107,7 +114,7 @@
         </div>
         <div class="stat">
             <span>Minutos Jugados:</span>
-            <span>90000</span> <!-- Cambia este número según las estadísticas actuales -->
+            <span>90000</span>
         </div>
         <div class="stat">
             <span>Trofeos Ganados:</span>
@@ -166,7 +173,7 @@
                         </tr>
                         <tr>
                             <td>Minutos Jugados</td>
-                            <td>90000</td> <!-- Cambia este número según las estadísticas actuales -->
+                            <td>90000</td>
                         </tr>
                     </tbody>
                 </table>
@@ -203,7 +210,7 @@
                         </tr>
                         <tr>
                             <td>Minutos Jugados</td>
-                            <td>20000</td> <!-- Cambia este número según las estadísticas actuales -->
+                            <td>20000</td>
                         </tr>
                     </tbody>
                 </table>
@@ -214,13 +221,7 @@
     <div>
         <h2>Sobre Messi</h2>
         <p class="about">
-            Lionel Messi, considerado uno de los mejores futbolistas de todos los tiempos, ha dejado una huella imborrable en el mundo del fútbol. Desde su debut profesional en 2004, ha logrado innumerables récords y ha sido galardonado con múltiples premios, incluidos varios Balones de Oro. Su habilidad, visión de juego y capacidad para marcar goles lo han convertido en un ícono del deporte.
-        </p>
-        <p class="about">
-            A lo largo de su carrera, Messi ha jugado en el FC Barcelona y la selección argentina, donde ha alcanzado logros impresionantes, incluyendo la victoria en la Copa América y la Copa del Mundo. Su pasión por el juego y su dedicación lo han llevado a ser un modelo a seguir para jóvenes futbolistas en todo el mundo.
-        </p>
-        <p class="about">
-            Con una capacidad única para desbordar defensas y crear oportunidades, Messi ha sido un pilar en sus equipos y un verdadero líder dentro y fuera del campo. Su legado continúa creciendo, y su influencia en el fútbol es indiscutible.
+            Lionel Messi, considerado uno de los mejores futbolistas de todos los tiempos, ha marcado una era en el fútbol mundial. Su habilidad, destreza y pasión por el deporte lo han llevado a ser un ícono no solo en su país natal, Argentina, sino en todo el mundo. A lo largo de su carrera, ha batido innumerables récords y ha inspirado a millones con su juego.
         </p>
     </div>
 </body>
