@@ -12,28 +12,83 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
+            justify-content: flex-start;
+            height: auto; /* Cambiado a auto para permitir más contenido */
             margin: 0;
+            padding-top: 20px;
         }
         h1 {
             background: linear-gradient(to right, #75aadb, #ffffff);
             -webkit-background-clip: text;
             color: transparent;
-            font-size: 2em;
+            font-size: 2.5em;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
         }
         img {
             width: 100%;
             max-width: 400px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px; /* Espacio entre la imagen y el contenido */
+        }
+        .stats {
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px; /* Espacio entre el cuadro y el siguiente contenido */
+        }
+        .stats h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .stat {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
         }
     </style>
 </head>
 <body>
     <h1>Messi es más grande que Maradona (para Emiliano)</h1>
     <img src="MESSI.jpg" alt="Messi levantando la copa con la camiseta de Argentina">
+    
+    <div class="stats">
+        <h2>Estadísticas de Messi</h2>
+        <div class="stat">
+            <span>Cantidad de Goles (Club):</span>
+            <span>800</span> <!-- Cambia este número según las estadísticas actuales -->
+        </div>
+        <div class="stat">
+            <span>Cantidad de Goles (Selección):</span>
+            <span>106</span> <!-- Cambia este número según las estadísticas actuales -->
+        </div>
+        <div class="stat">
+            <span>Asistencias Totales:</span>
+            <span>330</span> <!-- Cambia este número según las estadísticas actuales -->
+        </div>
+        <div class="stat">
+            <span>Partidos Jugados:</span>
+            <span>1000</span> <!-- Cambia este número según las estadísticas actuales -->
+        </div>
+        <div class="stat">
+            <span>Trofeos Ganados:</span>
+            <span>40</span> <!-- Cambia este número según las estadísticas actuales -->
+        </div>
+    </div>
+
+    <div>
+        <h2>Sobre Messi</h2>
+        <p>
+            Lionel Messi, considerado uno de los mejores futbolistas de todos los tiempos, ha dejado una huella imborrable en el mundo del fútbol. Desde su debut profesional en 2004, ha logrado innumerables récords y ha sido galardonado con múltiples premios, incluidos varios Balones de Oro. Su habilidad, visión de juego y capacidad para marcar goles lo han convertido en un ícono del deporte.
+        </p>
+        <p>
+            A lo largo de su carrera, Messi ha jugado en el FC Barcelona y la selección argentina, donde ha alcanzado logros impresionantes, incluyendo la victoria en la Copa América y la Copa del Mundo. Su pasión por el juego y su dedicación lo han llevado a ser un modelo a seguir para jóvenes futbolistas en todo el mundo.
+        </p>
+    </div>
 </body>
 </html>
