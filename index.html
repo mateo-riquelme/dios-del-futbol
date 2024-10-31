@@ -13,7 +13,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
-            height: auto; /* Cambiado a auto para permitir más contenido */
+            height: auto;
             margin: 0;
             padding-top: 20px;
         }
@@ -31,25 +31,35 @@
             max-width: 400px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            margin-bottom: 20px; /* Espacio entre la imagen y el contenido */
+            margin-bottom: 20px;
         }
-        .stats {
+        .stats, .club-stats, .comparison {
             background-color: #1f1f1f;
             border-radius: 10px;
             padding: 20px;
             width: 90%;
             max-width: 600px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            margin-bottom: 20px; /* Espacio entre el cuadro y el siguiente contenido */
+            margin-bottom: 20px;
         }
-        .stats h2 {
+        .stats h2, .club-stats h2, .comparison h2 {
             text-align: center;
             margin-bottom: 15px;
         }
-        .stat {
+        .stat, .club-stat, .comp {
             display: flex;
             justify-content: space-between;
             padding: 5px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ffffff;
+            padding: 8px;
+            text-align: center;
         }
     </style>
 </head>
@@ -58,27 +68,78 @@
     <img src="MESSI.jpg" alt="Messi levantando la copa con la camiseta de Argentina">
     
     <div class="stats">
-        <h2>Estadísticas de Messi</h2>
+        <h2>Logros y Récords de Messi</h2>
         <div class="stat">
             <span>Cantidad de Goles (Club):</span>
-            <span>800</span> <!-- Cambia este número según las estadísticas actuales -->
+            <span>800</span>
         </div>
         <div class="stat">
             <span>Cantidad de Goles (Selección):</span>
-            <span>106</span> <!-- Cambia este número según las estadísticas actuales -->
+            <span>106</span>
         </div>
         <div class="stat">
             <span>Asistencias Totales:</span>
-            <span>330</span> <!-- Cambia este número según las estadísticas actuales -->
+            <span>330</span>
         </div>
         <div class="stat">
             <span>Partidos Jugados:</span>
-            <span>1000</span> <!-- Cambia este número según las estadísticas actuales -->
+            <span>1000</span>
         </div>
         <div class="stat">
             <span>Trofeos Ganados:</span>
-            <span>40</span> <!-- Cambia este número según las estadísticas actuales -->
+            <span>40</span>
         </div>
+    </div>
+
+    <div class="club-stats">
+        <h2>Desempeño por Club</h2>
+        <div class="club-stat">
+            <span>FC Barcelona:</span>
+            <span>Goles: 672, Asistencias: 268, Trofeos: 35</span>
+        </div>
+        <div class="club-stat">
+            <span>Paris Saint-Germain:</span>
+            <span>Goles: 20, Asistencias: 10, Trofeos: 1</span>
+        </div>
+        <div class="club-stat">
+            <span>Selección Argentina:</span>
+            <span>Goles: 106, Asistencias: 53, Trofeos: 4</span>
+        </div>
+    </div>
+
+    <div class="comparison">
+        <h2>Comparativa: Messi vs Maradona</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Datos</th>
+                    <th>Messi</th>
+                    <th>Maradona</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Goles Totales</td>
+                    <td>800</td>
+                    <td>345</td>
+                </tr>
+                <tr>
+                    <td>Asistencias Totales</td>
+                    <td>330</td>
+                    <td>115</td>
+                </tr>
+                <tr>
+                    <td>Trofeos Ganados</td>
+                    <td>40</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Partidos Jugados</td>
+                    <td>1000</td>
+                    <td>491</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <div>
